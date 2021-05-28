@@ -56,7 +56,8 @@ function bounceOff(obj1, obj2)
   {
     obj1.velocityX = -1 * obj1.velocityX; 
   }
-  else if (obj1.y - obj2.y < obj2.height/2 + obj1.height/2
+  
+  if (obj1.y - obj2.y < obj2.height/2 + obj1.height/2
     && obj2.y - obj1.y < obj2.height/2 + obj1.height/2)
   {
     obj1.velocityY = -1 * obj1.velocityY;
